@@ -90,11 +90,26 @@ body {
 }
 
 .container {
-  width: 1200px;
   padding: 0 15px;
   margin: 0 auto;
 }
 
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+}
 .header {
   border-bottom: 1px solid #ececec;
 }
@@ -135,6 +150,11 @@ body {
   display: flex;
   margin-left: 93px;
 }
+@media screen and (max-width: 768px) {
+  .site-nav {
+    display: none;
+  }
+}
 
 .site-nav__item {
   position: relative;
@@ -173,17 +193,41 @@ body {
 }
 
 .contacts-nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   margin-left: auto;
 }
+@media screen and (max-width: 768px) {
+  .contacts-nav {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  .contacts-nav {
+    padding-top: 21px;
+    padding-bottom: 21px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contacts-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
 
-.contacts-nav__item + .contacts-nav__item {
-  margin-left: 50px;
+@media screen and (min-width: 1200px) {
+  .contacts-nav__item + .contacts-nav__item {
+    margin-left: 50px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .contacts-nav__item {
+    padding: 0;
+    margin-bottom: 10px;
+  }
 }
 
 .contacts-nav__link {
@@ -193,14 +237,18 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-top: 32px;
-  padding-bottom: 32px;
   color: var(--primery-text-color);
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 1200px) {
+  .contacts-nav__link {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
 }
 .contacts-nav__link:hover, .contacts-nav__link:focus {
   color: var(--accent-color);
@@ -209,34 +257,6 @@ body {
 .contacts-nav__icon {
   margin-right: 10px;
   fill: currentColor;
-}
-
-.hero {
-  background-color: var(--hyro-bg-color);
-  text-align: center;
-  padding: 200px 0;
-}
-
-.hero__overlay {
-  max-width: 1600px;
-  height: 600px;
-  margin: 0 auto;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero-fon.jpg);
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-fon.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.hero__title {
-  color: var(--primery-bg-color);
-  width: 696px;
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  margin: 0 auto;
-  margin-bottom: 30px;
 }
 
 .button {
@@ -272,11 +292,29 @@ body {
   margin-bottom: 50px;
 }
 
+@media screen and (min-width: 768px) {
+  .features__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
 .features__thumb {
   height: 120px;
   background: var(--secondary-bg-color);
-  padding: 25px 100px;
+  padding: 25px 192px;
   margin-bottom: 30px;
+}
+@media screen and (min-width: 480px) {
+  .features__thumb {
+    width: 450;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .features__thumb {
+    padding: 25px 100px;
+  }
 }
 
 .features__icon {
@@ -284,17 +322,16 @@ body {
   height: 70px;
 }
 
-.features__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
 .features__item {
-  width: calc((100% - 90px) / 4);
+  text-align: center;
 }
-.features__item + .features__item {
-  margin-left: 30px;
+@media screen and (min-width: 1200px) {
+  .features__item {
+    width: calc((100% - 90px) / 4);
+  }
+  .features__item + .features__item {
+    margin-left: 30px;
+  }
 }
 
 .features__title {

@@ -1,8 +1,21 @@
+.features__list {
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
+}
+
 .features__thumb {
+  @media screen and (min-width: 480px) {
+    width: 450;
+  }
   height: 120px;
   background: var(--secondary-bg-color);
 
-  padding: 25px 100px;
+  padding: 25px 192px;
+
+  @media screen and (min-width: 1200px) {
+    padding: 25px 100px;
+  }
   margin-bottom: 30px;
 }
 
@@ -11,15 +24,14 @@
   height: 70px;
 }
 
-.features__list {
-  display: flex;
-}
-
 .features__item {
-  width: calc((100% - 90px) / 4);
+  text-align: center;
+  @media screen and (min-width: 1200px) {
+    width: calc((100% - 90px) / 4);
 
-  & + & {
-    margin-left: 30px;
+    & + & {
+      margin-left: 30px;
+    }
   }
 }
 
