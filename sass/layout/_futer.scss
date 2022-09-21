@@ -1,0 +1,98 @@
+.footer__container {
+  display: flex;
+  align-items: baseline;
+}
+
+.footer {
+  background-color: var(--hyro-bg-color);
+
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.footer__logo {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.logo__end_color_white {
+  color: var(--primery-bg-color);
+}
+
+.futer-social__text {
+  color: var(--primery-bg-color);
+  @include font(700, 14px, 1.14);
+
+  margin-bottom: 20px;
+
+  text-transform: uppercase;
+}
+.futer-social__list {
+  display: flex;
+  gap: 10px;
+}
+.futer-social__link {
+  @extend %align;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: var(--primery-bg-color);
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    background-color: var(--buton-active-color);
+  }
+}
+
+.futer-social__icon {
+  fill: currentColor;
+}
+
+.futer-social {
+  margin-left: 70px;
+}
+
+.futer-subscription {
+  margin-left: auto;
+}
+
+.futer-subscription__text {
+  font-weight: 700;
+
+  line-height: 1.14;
+  text-transform: uppercase;
+
+  color: var(--primery-bg-color);
+  margin-bottom: 20px;
+}
+
+.futer-subscription__field {
+  display: flex;
+  gap: 12px;
+}
+
+.futer-subscription__email {
+  width: 358px;
+  height: 50px;
+  padding: 15px 16px;
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background-color: var(--hyro-bg-color);
+  color: rgba(255, 255, 255, 0.6);
+}
+.futer-subscription__button {
+  position: relative;
+
+  padding: 10px 62px 10px 18px;
+}
+
+.futer-subscription__icon {
+  position: absolute;
+  top: 13px;
+  right: 28px;
+}
