@@ -1028,6 +1028,7 @@ body {
 .mobile-menu__container {
   position: relative;
   padding-top: 48px;
+  height: 100vh;
 }
 
 .mobile-menu__close-btn {
@@ -1060,7 +1061,7 @@ body {
   color: var(--accent-color);
 }
 
-.mobile-contacts {
+.mobile-contacts-nav {
   margin-top: auto;
 }
 
