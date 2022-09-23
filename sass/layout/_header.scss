@@ -1,4 +1,8 @@
 .open-mobile-menu-btn {
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+
   border: none;
   background-color: transparent;
   padding: 0;
