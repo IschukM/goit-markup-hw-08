@@ -1,5 +1,5 @@
 .site-nav {
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 767px) {
     display: none;
   }
   display: flex;
@@ -40,8 +40,4 @@
   background-color: var(--accent-color);
   margin-top: 28px;
   border-radius: 2px;
-}
-
-.current {
-  color: var(--accent-color);
 }
