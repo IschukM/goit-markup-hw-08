@@ -1,15 +1,9 @@
-.footer__container {
-  display: flex;
-  align-items: baseline;
-}
-
 .footer {
   background-color: var(--hyro-bg-color);
 
   padding-top: 60px;
   padding-bottom: 60px;
 }
-
 .footer__logo {
   display: block;
   margin-bottom: 20px;
@@ -32,7 +26,9 @@
   gap: 10px;
 }
 .futer-social__link {
-  @extend %align;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 44px;
   height: 44px;
   border-radius: 50%;
@@ -51,27 +47,14 @@
   fill: currentColor;
 }
 
-.futer-social {
-  margin-left: 70px;
-}
-
-.futer-subscription {
-  margin-left: auto;
-}
-
 .futer-subscription__text {
   font-weight: 700;
-
+  text-align: center;
   line-height: 1.14;
   text-transform: uppercase;
 
   color: var(--primery-bg-color);
   margin-bottom: 20px;
-}
-
-.futer-subscription__field {
-  display: flex;
-  gap: 12px;
 }
 
 .futer-subscription__email {
@@ -85,6 +68,7 @@
   background-color: var(--hyro-bg-color);
   color: rgba(255, 255, 255, 0.6);
 }
+
 .futer-subscription__button {
   position: relative;
 
@@ -95,4 +79,53 @@
   position: absolute;
   top: 13px;
   right: 28px;
+}
+
+@media screen and (max-width: 767px) {
+  .futer-social {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 60px;
+  }
+
+  .futer-center {
+    text-align: center;
+  }
+  .futer-subscription__email {
+    width: 100%;
+  }
+  .futer-subscription__email {
+    margin-bottom: 20px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .footer__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .footer {
+    padding-left: 76px;
+    padding-bottom: 89px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer__container {
+    display: flex;
+    align-items: baseline;
+  }
+
+  .futer-social {
+    margin-left: 70px;
+  }
+
+  .futer-subscription {
+    margin-left: auto;
+  }
+  .futer-subscription__field {
+    display: flex;
+    gap: 12px;
+  }
 }

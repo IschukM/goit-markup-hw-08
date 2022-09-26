@@ -1,7 +1,8 @@
-.footer-address__item + .address__item {
-  margin-top: 9px;
+@media screen and (max-width: 1200px) {
+  .footer-address {
+    margin-bottom: 60px;
+  }
 }
-
 .footer-address__link {
   color: rgba(255, 255, 255, 0.6);
 
@@ -18,4 +19,8 @@
 
 .footer-address__text {
   color: var(--primery-bg-color);
+}
+
+.footer-address__item + .address__item {
+  margin-top: 9px;
 }
