@@ -30,12 +30,12 @@
 
           <ul class="site-nav list">
             <li class="site-nav__item">
-              <a href="./index.html" class="site-nav__link site-nav__link_active link current"
-                >Студія</a
-              >
+              <a href="./index.html" class="site-nav__link link">Студія</a>
             </li>
             <li class="site-nav__item">
-              <a href="./portfolio.html" class="site-nav__link link">Портфоліо</a>
+              <a href="./portfolio.html" class="site-nav__link link site-nav__link_active current"
+                >Портфоліо</a
+              >
             </li>
             <li class="site-nav__item"><a href="#" class="site-nav__link link">Контакти</a></li>
           </ul>
@@ -75,10 +75,10 @@
           </button>
           <ul class="mobile-nav list">
             <li class="mobile-nav__item">
-              <a href="./index.html" class="mobile-nav__link link current">Студія</a>
+              <a href="./index.html" class="mobile-nav__link link">Студія</a>
             </li>
             <li class="mobile-nav__item">
-              <a href="./portfolio.html" class="mobile-nav__link link">Портфоліо</a>
+              <a href="./portfolio.html" class="mobile-nav__link link current">Портфоліо</a>
             </li>
             <li class="mobile-nav__item">
               <a href="#" class="mobile-nav__link link">Контакти </a>
@@ -95,13 +95,20 @@
               >
             </li>
           </ul>
+
           <ul class="mobile-contacts-social list">
-            <li>
+            <li class="mobile-contacts-social__item">
               <a class="mobile-contacts-social__link" href="#" target="_blank">Instagram </a>
             </li>
-            <li><a class="mobile-contacts-social__link" href="#" target="_blank">Twitter </a></li>
-            <li><a class="mobile-contacts-social__link" href="#" target="_blank">Facebook </a></li>
-            <li><a class="mobile-contacts-social__link" href="#" target="_blank">LinkedIn </a></li>
+            <li class="mobile-contacts-social__item">
+              <a class="mobile-contacts-social__link" href="#" target="_blank">Twitter </a>
+            </li>
+            <li class="mobile-contacts-social__item">
+              <a class="mobile-contacts-social__link" href="#" target="_blank">Facebook </a>
+            </li>
+            <li class="mobile-contacts-social__item">
+              <a class="mobile-contacts-social__link" href="#" target="_blank">LinkedIn </a>
+            </li>
           </ul>
         </div>
       </div>
@@ -135,11 +142,25 @@
             <li class="project__item">
               <a class="project__link" href="#">
                 <div class="project__thumb">
-                  <img
-                    src="./images/tehnokrjak.jpg"
-                    alt="Екран ноутбуку зі зображенням сайту"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="./images/tehnokrjak.jpg 1x, ./images/1-desktop@2x.jpg 2x"
+                      media="(min-width: 1200px)"
+                    />
+
+                    <source
+                      srcset="./images/1-tablet.jpg 1x, ./images/1-tablet@2x.jpg 2x"
+                      media="(min-width: 768px)"
+                    />
+
+                    <source
+                      srcset="./images/1-mobile.jpg 1x, ./images/1-mobile@2x.jpg 2x"
+                      media="(max-width: 767px)"
+                    />
+
+                    <img src="./images/tehnokrjak.jpg" alt="Екран ноутбуку зі зображенням сайту" />
+                  </picture>
+
                   <p class="project__action">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                     Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
@@ -155,7 +176,25 @@
             <li class="project__item">
               <a class="project__link" href="#">
                 <div class="project__thumb">
-                  <img src="./images/poster.jpg" alt="Два баскетботісти з м'ячом" width="370" />
+                  <picture>
+                    <source
+                      srcset="./images/poster.jpg 1x, ./images/2-desktop@2x.jpg 2x"
+                      media="(min-width: 1200px)"
+                    />
+
+                    <source
+                      srcset="./images/2-tablet.jpg 1x, ./images/2-tablet@2x.jpg 2x"
+                      media="(min-width: 768px)"
+                    />
+
+                    <source
+                      srcset="./images/2-mobile.jpg 1x, ./images/2-mobile@2x.jpg 2x"
+                      media="(max-width: 767px)"
+                    />
+
+                    <img src="./images/poster.jpg" alt="Два баскетботісти з м'ячом" />
+                  </picture>
+
                   <p class="project__action">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                     Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
@@ -171,7 +210,25 @@
             <li class="project__item">
               <a class="project__link" href="#">
                 <div class="project__thumb">
-                  <img src="./images/restoran.jpg" alt="Логотип ресторану-риба" width="370" />
+                  <picture>
+                    <source
+                      srcset="./images/restoran.jpg 1x, ./images/3-desktop@2x.jpg 2x"
+                      media="(min-width: 1200px)"
+                    />
+
+                    <source
+                      srcset="./images/3-tablet.jpg 1x, ./images/3-tablet@2x.jpg 2x"
+                      media="(min-width: 768px)"
+                    />
+
+                    <source
+                      srcset="./images/3-mobile.jpg 1x, ./images/3-mobile@2x.jpg 2x"
+                      media="(max-width: 767px)"
+                    />
+
+                    <img src="./images/restoran.jpg" alt="Логотип ресторану-риба" />
+                  </picture>
+
                   <p class="project__action">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                     Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
@@ -187,7 +244,25 @@
             <li class="project__item">
               <a class="project__link" href="#">
                 <div class="project__thumb">
-                  <img src="./images/prime.jpg" alt="Навушники" width="370" />
+                  <picture>
+                    <source
+                      srcset="./images/prime.jpg 1x, ./images/4-desktop@2x.jpg 2x"
+                      media="(min-width: 1200px)"
+                    />
+
+                    <source
+                      srcset="./images/4-tablet.jpg 1x, ./images/4-tablet@2x.jpg 2x"
+                      media="(min-width: 768px)"
+                    />
+
+                    <source
+                      srcset="./images/4-mobile.jpg 1x, ./images/4-mobile@2x.jpg 2x"
+                      media="(max-width: 767px)"
+                    />
+
+                    <img src="./images/prime.jpg" alt="Навушники" />
+                  </picture>
+
                   <p class="project__action">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                     Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
@@ -203,7 +278,25 @@
             <li class="project__item">
               <a class="project__link" href="#">
                 <div class="project__thumb">
-                  <img src="./images/boxes.jpg" alt="Дві паперові коробочки" width="370" />
+                  <picture>
+                    <source
+                      srcset="./images/boxes.jpg 1x, ./images/5-desktop@2x.jpg 2x"
+                      media="(min-width: 1200px)"
+                    />
+
+                    <source
+                      srcset="./images/5-tablet.jpg 1x, ./images/5-tablet@2x.jpg 2x"
+                      media="(min-width: 768px)"
+                    />
+
+                    <source
+                      srcset="./images/5-mobile.jpg 1x, ./images/5-mobile@2x.jpg 2x"
+                      media="(max-width: 767px)"
+                    />
+
+                    <img src="./images/boxes.jpg" alt="Дві паперові коробочки" />
+                  </picture>
+
                   <p class="project__action">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                     Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
@@ -219,11 +312,25 @@
             <li class="project__item">
               <a class="project__link" href="#">
                 <div class="project__thumb">
-                  <img
-                    src="./images/inspiration.jpg"
-                    alt="Монітор із зображенням сайту"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="./images/inspiration.jpg 1x, ./images/6-desktop@2x.jpg 2x"
+                      media="(min-width: 1200px)"
+                    />
+
+                    <source
+                      srcset="./images/6-tablet.jpg 1x, ./images/6-tablet@2x.jpg 2x"
+                      media="(min-width: 768px)"
+                    />
+
+                    <source
+                      srcset="./images/6-mobile.jpg 1x, ./images/6-mobile@2x.jpg 2x"
+                      media="(max-width: 767px)"
+                    />
+
+                    <img src="./images/inspiration.jpg" alt="Монітор із зображенням сайту" />
+                  </picture>
+
                   <p class="project__action">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                     Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
@@ -240,7 +347,25 @@
             <li class="project__item">
               <a class="project__link" href="#">
                 <div class="project__thumb">
-                  <img src="./images/limited.jpg" alt="Сторінки розгорнутої книги" width="370" />
+                  <picture>
+                    <source
+                      srcset="./images/limited.jpg 1x, ./images/7-desktop@2x.jpg 2x"
+                      media="(min-width: 1200px)"
+                    />
+
+                    <source
+                      srcset="./images/7-tablet.jpg 1x, ./images/7-tablet@2x.jpg 2x"
+                      media="(min-width: 768px)"
+                    />
+
+                    <source
+                      srcset="./images/7-mobile.jpg 1x, ./images/7-mobile@2x.jpg 2x"
+                      media="(max-width: 767px)"
+                    />
+
+                    <img src="./images/limited.jpg" alt="Сторінки розгорнутої книги" />
+                  </picture>
+
                   <p class="project__action">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                     Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
@@ -256,7 +381,25 @@
             <li class="project__item">
               <a class="project__link" href="#">
                 <div class="project__thumb">
-                  <img src="./images/lab.jpg" alt="Бірка з написом" width="370" />
+                  <picture>
+                    <source
+                      srcset="./images/lab.jpg 1x, ./images/8-desktop@2x.jpg 2x"
+                      media="(min-width: 1200px)"
+                    />
+
+                    <source
+                      srcset="./images/8-tablet.jpg 1x, ./images/8-tablet@2x.jpg 2x"
+                      media="(min-width: 768px)"
+                    />
+
+                    <source
+                      srcset="./images/8-mobile.jpg 1x, ./images/8-mobile@2x.jpg 2x"
+                      media="(max-width: 767px)"
+                    />
+
+                    <img src="./images/lab.jpg" alt="Бірка з написом" />
+                  </picture>
+
                   <p class="project__action">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                     Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
@@ -272,11 +415,25 @@
             <li class="project__item">
               <a class="project__link" href="#">
                 <div class="project__thumb">
-                  <img
-                    src="./images/growing.jpg"
-                    alt="Екран ноутбуку зі зображенням сайту"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="./images/growing.jpg 1x, ./images/9-desktop@2x.jpg 2x"
+                      media="(min-width: 1200px)"
+                    />
+
+                    <source
+                      srcset="./images/9-tablet.jpg 1x, ./images/9-tablet@2x.jpg 2x"
+                      media="(min-width: 768px)"
+                    />
+
+                    <source
+                      srcset="./images/9-mobile.jpg 1x, ./images/9-mobile@2x.jpg 2x"
+                      media="(max-width: 767px)"
+                    />
+
+                    <img src="./images/growing.jpg" alt="Екран ноутбуку зі зображенням сайту" />
+                  </picture>
+
                   <p class="project__action">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                     Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
@@ -381,5 +538,6 @@
         </div>
       </div>
     </footer>
+    <script src="./js/menu.js"></script>
   </body>
 </html>

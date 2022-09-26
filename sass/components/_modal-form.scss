@@ -1,10 +1,9 @@
 .form {
-  min-width: 528px;
-  min-height: 581px;
+  max-width: 450px;
+  max-height: 609px;
 
   padding: 40px;
 }
-
 .form__title {
   margin-bottom: 10px;
   text-align: center;
@@ -134,4 +133,12 @@
 .checkbox__link {
   text-decoration: underline;
   color: var(--accent-color);
+}
+@media screen and (min-width: 1200px) {
+  .form {
+    min-width: 528px;
+    min-height: 581px;
+
+    padding: 40px;
+  }
 }
