@@ -720,6 +720,10 @@ body {
   right: 28px;
 }
 
+.futer-subscription__email {
+  margin-bottom: 20px;
+}
+
 @media screen and (max-width: 767px) {
   .futer-social {
     display: -webkit-box;
@@ -743,24 +747,23 @@ body {
   .futer-subscription__email {
     width: 100%;
   }
-  .futer-subscription__email {
-    margin-bottom: 20px;
-  }
 }
 @media screen and (min-width: 768px) {
   .footer__container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
-  .footer {
-    padding-left: 76px;
-    padding-bottom: 89px;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -783,6 +786,9 @@ body {
     display: -ms-flexbox;
     display: flex;
     gap: 12px;
+  }
+  .futer-subscription__email {
+    margin-bottom: 0px;
   }
 }
 @media screen and (max-width: 1200px) {
@@ -812,22 +818,18 @@ body {
 }
 
 .portfolio {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .filters {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 8px;
   margin-bottom: 50px;
-}
-
-.filters__item + .filters__item {
-  margin-left: 8px;
 }
 
 .filters__button {
@@ -850,7 +852,28 @@ body {
   -webkit-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
           box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
+.filters__button .filters__item {
+  width: 450px;
+}
 
+@media screen and (min-width: 1200px) {
+  .portfolio {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+  .filters {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 50px;
+  }
+  .filters__item + .filters__item {
+    margin-left: 8px;
+  }
+}
 .project__thumb {
   position: relative;
   overflow: hidden;

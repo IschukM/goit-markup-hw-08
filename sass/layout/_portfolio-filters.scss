@@ -1,16 +1,12 @@
 .portfolio {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
-
 .filters {
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
+  gap: 8px;
   margin-bottom: 50px;
-}
-
-.filters__item + .filters__item {
-  margin-left: 8px;
 }
 
 .filters__button {
@@ -34,5 +30,26 @@
     color: var(--primery-bg-color);
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
       0px 2px 2px rgba(0, 0, 0, 0.12);
+  }
+  @media screen and (max-width: 767px) {
+  }
+  .filters__item {
+    width: 450px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .portfolio {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+
+  .filters {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+  }
+  .filters__item + .filters__item {
+    margin-left: 8px;
   }
 }

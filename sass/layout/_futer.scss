@@ -80,7 +80,9 @@
   top: 13px;
   right: 28px;
 }
-
+.futer-subscription__email {
+  margin-bottom: 20px;
+}
 @media screen and (max-width: 767px) {
   .futer-social {
     display: flex;
@@ -96,19 +98,14 @@
   .futer-subscription__email {
     width: 100%;
   }
-  .futer-subscription__email {
-    margin-bottom: 20px;
-  }
 }
 @media screen and (min-width: 768px) {
   .footer__container {
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
-  }
-  .footer {
-    padding-left: 76px;
-    padding-bottom: 89px;
+    justify-content: space-around;
+    align-items: flex-start;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -127,5 +124,8 @@
   .futer-subscription__field {
     display: flex;
     gap: 12px;
+  }
+  .futer-subscription__email {
+    margin-bottom: 0px;
   }
 }
