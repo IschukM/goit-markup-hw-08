@@ -89,6 +89,9 @@
   letter-spacing: 0.02em;
   color: #757575;
 }
+.mobile-contacts__email:hover, .mobile-contacts__email:focus {
+  color: var(--accent-color);
+}
 
 .mobile-contacts-social {
   display: -webkit-box;
