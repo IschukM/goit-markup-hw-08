@@ -102,7 +102,7 @@
 .mobile-contacts-social {
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 10px;
   margin-top: 64px;
   margin-bottom: 48px;
 }
@@ -113,6 +113,20 @@
   letter-spacing: 0.02em;
   color: #2196f3;
 }
+.mobile-contacts-social__item {
+  display: flex;
+  align-items: center;
+}
+
+.mobile-contacts-social__item:not(:last-child)::after {
+  margin-left: 10px;
+  content: '';
+  display: block;
+  width: 1px;
+  height: 22px;
+  background-color: rgba(33, 33, 33, 0.2);
+}
+
 .current {
   color: var(--accent-color);
 }
