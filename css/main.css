@@ -967,6 +967,7 @@ body {
 }
 @media screen and (min-width: 768px) {
   .project__link {
+    height: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1286,8 +1287,7 @@ body {
   margin: 0;
 }
 
-.mobile-menu__close-btn:hover .mobile-menu__close-icon,
-.mobile-menu__close-btn:focus .mobile-menu__close-icon {
+.mobile-menu__close-btn:hover .mobile-menu__close-icon, .mobile-menu__close-btn:focus .mobile-menu__close-icon {
   fill: var(#2196f3);
 }
 
