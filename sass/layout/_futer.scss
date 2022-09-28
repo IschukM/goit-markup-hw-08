@@ -107,6 +107,10 @@
     justify-content: space-around;
     align-items: flex-start;
   }
+
+  .futer-social__text {
+    text-align: center;
+  }
 }
 @media screen and (min-width: 1200px) {
   .footer__container {
@@ -127,5 +131,8 @@
   }
   .futer-subscription__email {
     margin-bottom: 0px;
+  }
+  .futer-subscription__text {
+    text-align: left;
   }
 }

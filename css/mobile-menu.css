@@ -101,6 +101,8 @@
       -ms-flex-align: center;
           align-items: center;
   gap: 10px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   margin-top: 64px;
   margin-bottom: 48px;
 }

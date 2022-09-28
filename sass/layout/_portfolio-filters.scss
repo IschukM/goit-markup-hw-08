@@ -7,8 +7,10 @@
   flex-wrap: wrap;
   gap: 8px;
   margin-bottom: 30px;
+  @media screen and (max-width: 767px) {
+    row-gap: 15px;
+  }
 }
-
 .filters__button {
   padding: 6px 22px;
 
@@ -33,7 +35,7 @@
   }
 }
 
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 768px) {
   .filters {
     justify-content: center;
   }
@@ -49,6 +51,7 @@
     display: flex;
     justify-content: center;
     margin-bottom: 50px;
+    gap: 0;
   }
   .filters__item + .filters__item {
     margin-left: 8px;
